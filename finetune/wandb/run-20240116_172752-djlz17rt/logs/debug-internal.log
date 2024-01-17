@@ -1,0 +1,189 @@
+2024-01-16 17:27:52,643 INFO    StreamThr :40201 [internal.py:wandb_internal():86] W&B internal server running at pid: 40201, started at: 2024-01-16 17:27:52.628427
+2024-01-16 17:27:52,646 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: status
+2024-01-16 17:27:52,656 INFO    WriterThread:40201 [datastore.py:open_for_write():87] open: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/run-djlz17rt.wandb
+2024-01-16 17:27:52,657 DEBUG   SenderThread:40201 [sender.py:send():382] send: header
+2024-01-16 17:27:52,681 DEBUG   SenderThread:40201 [sender.py:send():382] send: run
+2024-01-16 17:27:52,964 INFO    SenderThread:40201 [dir_watcher.py:__init__():211] watching files in: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files
+2024-01-16 17:27:52,964 INFO    SenderThread:40201 [sender.py:_start_run_threads():1136] run started: djlz17rt with start time 1705454872.639841
+2024-01-16 17:27:52,979 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: check_version
+2024-01-16 17:27:52,979 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: check_version
+2024-01-16 17:27:53,212 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: run_start
+2024-01-16 17:27:53,221 DEBUG   HandlerThread:40201 [system_info.py:__init__():27] System info init
+2024-01-16 17:27:53,221 DEBUG   HandlerThread:40201 [system_info.py:__init__():42] System info init done
+2024-01-16 17:27:53,221 INFO    HandlerThread:40201 [system_monitor.py:start():194] Starting system monitor
+2024-01-16 17:27:53,221 INFO    SystemMonitor:40201 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-16 17:27:53,221 INFO    HandlerThread:40201 [system_monitor.py:probe():214] Collecting system info
+2024-01-16 17:27:53,222 INFO    SystemMonitor:40201 [interfaces.py:start():190] Started cpu monitoring
+2024-01-16 17:27:53,222 DEBUG   HandlerThread:40201 [system_info.py:probe():151] Probing system
+2024-01-16 17:27:53,222 INFO    SystemMonitor:40201 [interfaces.py:start():190] Started disk monitoring
+2024-01-16 17:27:53,223 INFO    SystemMonitor:40201 [interfaces.py:start():190] Started gpuapple monitoring
+2024-01-16 17:27:53,225 INFO    SystemMonitor:40201 [interfaces.py:start():190] Started memory monitoring
+2024-01-16 17:27:53,226 INFO    SystemMonitor:40201 [interfaces.py:start():190] Started network monitoring
+2024-01-16 17:27:53,229 DEBUG   HandlerThread:40201 [system_info.py:_probe_git():136] Probing git
+2024-01-16 17:27:53,241 DEBUG   HandlerThread:40201 [system_info.py:_probe_git():144] Probing git done
+2024-01-16 17:27:53,241 DEBUG   HandlerThread:40201 [system_info.py:probe():199] Probing system done
+2024-01-16 17:27:53,241 DEBUG   HandlerThread:40201 [system_monitor.py:probe():223] {'os': 'macOS-13.3.1-arm64-arm-64bit', 'python': '3.9.12', 'heartbeatAt': '2024-01-17T01:27:53.222431', 'startedAt': '2024-01-17T01:27:52.617239', 'docker': None, 'cuda': None, 'args': ('--model_name', 'tiiuae/falcon-7b-instruct', '--run_name', 'falcon-7b-instruct-lora-bias-CoT', '--dataset', 'yc4142/bias-CoT', '--peft_name', 'falcon-7b-instruct-lora-bias-CoT', '--output_dir', 'falcon-7b-instruct-lora-bias-CoT-results'), 'state': 'running', 'program': '/Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/finetune_HF_model.py', 'codePathLocal': 'finetune_HF_model.py', 'codePath': 'finetune/finetune_HF_model.py', 'git': {'remote': 'git@github.com:semi-literatedengineeringstudent/LLMReasoningFinetuning.git', 'commit': '238fcde45f487458e56ed5ca4ae9ba4579f3d14d'}, 'email': None, 'root': '/Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning', 'host': 'Yudus-MacBook-Pro-514.local', 'username': 'yuduc2', 'executable': '/Library/Frameworks/Python.framework/Versions/3.9/bin/python3', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'/': {'total': 926.3517189025879, 'used': 745.6335487365723}}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2024-01-16 17:27:53,241 INFO    HandlerThread:40201 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-16 17:27:53,241 INFO    HandlerThread:40201 [system_monitor.py:probe():227] Publishing system info
+2024-01-16 17:27:53,242 INFO    HandlerThread:40201 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-16 17:27:53,244 DEBUG   SenderThread:40201 [sender.py:send():382] send: files
+2024-01-16 17:27:53,244 INFO    SenderThread:40201 [sender.py:_save_file():1403] saving file wandb-metadata.json with policy now
+2024-01-16 17:27:53,248 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: python_packages
+2024-01-16 17:27:53,248 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: python_packages
+2024-01-16 17:27:53,248 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-16 17:27:53,248 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: stop_status
+2024-01-16 17:27:53,249 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-16 17:27:53,518 DEBUG   SenderThread:40201 [sender.py:send():382] send: telemetry
+2024-01-16 17:27:53,530 DEBUG   SenderThread:40201 [sender.py:send():382] send: exit
+2024-01-16 17:27:53,530 INFO    SenderThread:40201 [sender.py:send_exit():589] handling exit code: 1
+2024-01-16 17:27:53,530 INFO    SenderThread:40201 [sender.py:send_exit():591] handling runtime: 0
+2024-01-16 17:27:53,530 INFO    SenderThread:40201 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-16 17:27:53,530 INFO    SenderThread:40201 [sender.py:send_exit():597] send defer
+2024-01-16 17:27:53,530 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:53,531 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-16 17:27:53,531 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:53,531 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-16 17:27:53,531 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 1
+2024-01-16 17:27:53,531 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:53,531 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-16 17:27:53,532 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:53,532 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-16 17:27:53,532 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 2
+2024-01-16 17:27:53,532 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:53,532 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-16 17:27:53,532 INFO    HandlerThread:40201 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-16 17:27:53,532 DEBUG   SystemMonitor:40201 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-16 17:27:53,533 INFO    HandlerThread:40201 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-16 17:27:53,533 DEBUG   SystemMonitor:40201 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-16 17:27:53,533 INFO    HandlerThread:40201 [interfaces.py:finish():202] Joined disk monitor
+2024-01-16 17:27:53,533 DEBUG   SystemMonitor:40201 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-16 17:27:53,897 INFO    wandb-upload_0:40201 [upload_job.py:push():131] Uploaded file /var/folders/fs/dh643qhs5335m5211rsc3tyr0000gn/T/tmpvkb9qezjwandb/ylebryhm-wandb-metadata.json
+2024-01-16 17:27:53,970 INFO    Thread-12 :40201 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/wandb-metadata.json
+2024-01-16 17:27:53,970 INFO    Thread-12 :40201 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/wandb-summary.json
+2024-01-16 17:27:53,971 INFO    Thread-12 :40201 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/requirements.txt
+2024-01-16 17:27:53,971 INFO    Thread-12 :40201 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/output.log
+2024-01-16 17:27:54,761 INFO    HandlerThread:40201 [interfaces.py:finish():202] Joined gpuapple monitor
+2024-01-16 17:27:54,762 INFO    HandlerThread:40201 [interfaces.py:finish():202] Joined memory monitor
+2024-01-16 17:27:54,762 INFO    HandlerThread:40201 [interfaces.py:finish():202] Joined network monitor
+2024-01-16 17:27:54,762 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-16 17:27:54,762 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:54,762 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-16 17:27:54,762 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 3
+2024-01-16 17:27:54,762 DEBUG   SenderThread:40201 [sender.py:send():382] send: telemetry
+2024-01-16 17:27:54,762 DEBUG   SenderThread:40201 [sender.py:send():382] send: stats
+2024-01-16 17:27:54,762 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: poll_exit
+2024-01-16 17:27:54,762 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:54,762 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-16 17:27:54,762 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:54,762 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-16 17:27:54,762 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 4
+2024-01-16 17:27:54,762 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:54,762 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-16 17:27:54,763 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:54,763 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-16 17:27:54,763 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 5
+2024-01-16 17:27:54,763 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:54,763 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-16 17:27:54,763 DEBUG   SenderThread:40201 [sender.py:send():382] send: summary
+2024-01-16 17:27:54,765 INFO    SenderThread:40201 [sender.py:_save_file():1403] saving file wandb-summary.json with policy end
+2024-01-16 17:27:54,766 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:54,766 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-16 17:27:54,766 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 6
+2024-01-16 17:27:54,766 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:54,766 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-16 17:27:54,766 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:54,766 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-16 17:27:54,767 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: status_report
+2024-01-16 17:27:54,874 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 7
+2024-01-16 17:27:54,875 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:54,875 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-16 17:27:54,875 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:54,875 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-16 17:27:54,971 INFO    Thread-12 :40201 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/config.yaml
+2024-01-16 17:27:54,971 INFO    Thread-12 :40201 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/wandb-summary.json
+2024-01-16 17:27:55,540 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-16 17:27:55,563 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 8
+2024-01-16 17:27:55,564 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: poll_exit
+2024-01-16 17:27:55,564 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:55,564 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-16 17:27:55,564 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:55,564 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-16 17:27:55,564 INFO    SenderThread:40201 [job_builder.py:build():296] Attempting to build job artifact
+2024-01-16 17:27:55,565 INFO    SenderThread:40201 [job_builder.py:_get_source_type():426] is repo sourced job
+2024-01-16 17:27:55,610 INFO    SenderThread:40201 [job_builder.py:build():402] adding wandb-job metadata file
+2024-01-16 17:27:55,612 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 9
+2024-01-16 17:27:55,613 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:55,613 DEBUG   SenderThread:40201 [sender.py:send():382] send: artifact
+2024-01-16 17:27:55,613 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-16 17:27:55,978 INFO    Thread-12 :40201 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/output.log
+2024-01-16 17:27:56,547 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-16 17:27:56,668 INFO    wandb-upload_1:40201 [upload_job.py:push():89] Uploaded file /Users/yuduc2/Library/Application Support/wandb/artifacts/staging/tmptz8jr3j7
+2024-01-16 17:27:56,668 INFO    wandb-upload_0:40201 [upload_job.py:push():89] Uploaded file /Users/yuduc2/Library/Application Support/wandb/artifacts/staging/tmp6blthuu2
+2024-01-16 17:27:57,521 INFO    SenderThread:40201 [sender.py:send_artifact():1494] sent artifact job-git_github.com_semi-literatedengineeringstudent_LLMReasoningFinetuning.git_finetune_finetune_HF_model.py - {'id': 'QXJ0aWZhY3Q6NjkzMTI4NTY5', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEzMDk5MDEwMQ==', 'latestArtifact': None}}
+2024-01-16 17:27:57,521 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:57,522 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-01-16 17:27:57,522 INFO    SenderThread:40201 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-16 17:27:57,991 INFO    SenderThread:40201 [dir_watcher.py:finish():388] scan: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files
+2024-01-16 17:27:57,991 INFO    SenderThread:40201 [dir_watcher.py:finish():402] scan save: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/requirements.txt requirements.txt
+2024-01-16 17:27:57,991 INFO    SenderThread:40201 [dir_watcher.py:finish():402] scan save: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/output.log output.log
+2024-01-16 17:27:57,994 INFO    SenderThread:40201 [dir_watcher.py:finish():402] scan save: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/config.yaml config.yaml
+2024-01-16 17:27:57,995 INFO    SenderThread:40201 [dir_watcher.py:finish():402] scan save: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/wandb-summary.json wandb-summary.json
+2024-01-16 17:27:57,999 INFO    SenderThread:40201 [dir_watcher.py:finish():402] scan save: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/wandb-metadata.json wandb-metadata.json
+2024-01-16 17:27:57,999 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 10
+2024-01-16 17:27:58,002 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: poll_exit
+2024-01-16 17:27:58,002 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:58,002 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-16 17:27:58,003 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:58,003 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-01-16 17:27:58,003 INFO    SenderThread:40201 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-16 17:27:58,557 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-16 17:27:58,558 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: poll_exit
+2024-01-16 17:27:58,568 INFO    wandb-upload_1:40201 [upload_job.py:push():131] Uploaded file /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/requirements.txt
+2024-01-16 17:27:58,571 INFO    wandb-upload_3:40201 [upload_job.py:push():131] Uploaded file /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/wandb-summary.json
+2024-01-16 17:27:58,571 INFO    wandb-upload_2:40201 [upload_job.py:push():131] Uploaded file /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/config.yaml
+2024-01-16 17:27:58,571 INFO    wandb-upload_0:40201 [upload_job.py:push():131] Uploaded file /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/files/output.log
+2024-01-16 17:27:58,778 INFO    Thread-11 :40201 [sender.py:transition_state():617] send defer: 11
+2024-01-16 17:27:58,780 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:58,780 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-16 17:27:58,781 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:58,781 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-01-16 17:27:58,781 INFO    SenderThread:40201 [file_pusher.py:join():181] waiting for file pusher
+2024-01-16 17:27:58,781 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 12
+2024-01-16 17:27:58,781 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:58,781 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-16 17:27:58,781 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:58,781 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-01-16 17:27:58,782 INFO    SenderThread:40201 [file_stream.py:finish():595] file stream finish called
+2024-01-16 17:27:59,417 INFO    SenderThread:40201 [file_stream.py:finish():599] file stream finish is done
+2024-01-16 17:27:59,418 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 13
+2024-01-16 17:27:59,418 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:59,418 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-16 17:27:59,419 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:59,419 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-01-16 17:27:59,419 INFO    SenderThread:40201 [sender.py:transition_state():617] send defer: 14
+2024-01-16 17:27:59,420 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: defer
+2024-01-16 17:27:59,420 DEBUG   SenderThread:40201 [sender.py:send():382] send: final
+2024-01-16 17:27:59,420 INFO    HandlerThread:40201 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-16 17:27:59,420 DEBUG   SenderThread:40201 [sender.py:send():382] send: footer
+2024-01-16 17:27:59,420 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: defer
+2024-01-16 17:27:59,420 INFO    SenderThread:40201 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-01-16 17:27:59,421 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-16 17:27:59,421 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: poll_exit
+2024-01-16 17:27:59,422 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-16 17:27:59,422 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: server_info
+2024-01-16 17:27:59,423 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-16 17:27:59,423 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: poll_exit
+2024-01-16 17:27:59,423 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-16 17:27:59,424 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: server_info
+2024-01-16 17:27:59,424 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-16 17:27:59,426 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: job_info
+2024-01-16 17:27:59,505 DEBUG   SenderThread:40201 [sender.py:send_request():409] send_request: job_info
+2024-01-16 17:27:59,506 INFO    MainThread:40201 [wandb_run.py:_footer_history_summary_info():3857] rendering history
+2024-01-16 17:27:59,506 INFO    MainThread:40201 [wandb_run.py:_footer_history_summary_info():3889] rendering summary
+2024-01-16 17:27:59,506 INFO    MainThread:40201 [wandb_run.py:_footer_sync_info():3816] logging synced files
+2024-01-16 17:27:59,506 DEBUG   HandlerThread:40201 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-16 17:27:59,506 INFO    HandlerThread:40201 [handler.py:finish():869] shutting down handler
+2024-01-16 17:28:00,432 INFO    WriterThread:40201 [datastore.py:close():296] close: /Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/wandb/run-20240116_172752-djlz17rt/run-djlz17rt.wandb
+2024-01-16 17:28:00,511 INFO    SenderThread:40201 [sender.py:finish():1572] shutting down sender
+2024-01-16 17:28:00,511 INFO    SenderThread:40201 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-16 17:28:00,512 INFO    SenderThread:40201 [file_pusher.py:join():181] waiting for file pusher
