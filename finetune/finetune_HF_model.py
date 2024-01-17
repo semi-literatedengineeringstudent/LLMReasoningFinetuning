@@ -51,6 +51,10 @@ def finetune_model(model_name:str = "tiiuae/falcon-7b-instruct",
     })
    repo_id = f'{huggingface_hub.whoami()["name"]}/{peft_name}'
    print(repo_id) 
+   print("Loading dataset: ", dataset)
+   split_dataset = load_dataset(dataset, split='train').train_test_split(test_size=0.03865, seed = 42)
+   train_data = split_dataset['train']
+   eval_data = split_dataset['test']
    print("Loading model for model: ", model_name)
 
    model = transformers.AutoModelForCausalLM.from_pretrained(
@@ -72,9 +76,6 @@ def finetune_model(model_name:str = "tiiuae/falcon-7b-instruct",
    save_steps = 100
    logging_steps = 20
    
-   split_dataset = load_dataset(dataset, split='train').train_test_split(test_size=0.03865, seed = 42)
-   train_data = split_dataset['train']
-   eval_data = split_dataset['test']
    tokenizer = AutoTokenizer.from_pretrained(model_name[0],add_eos_token=True)
    tokenizer.pad_token_id = 0
    tokenizer.add_special_tokens({'eos_token':'<eos>'})
