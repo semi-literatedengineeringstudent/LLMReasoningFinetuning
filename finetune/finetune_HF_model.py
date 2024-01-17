@@ -54,7 +54,7 @@ def finetune_model(model_name:str = "tiiuae/falcon-7b-instruct",
    print("Loading model for model: ", model_name)
 
    model = transformers.AutoModelForCausalLM.from_pretrained(
-    model_name[0],
+    model_name,
     device_map={"": 0}
     )
    
