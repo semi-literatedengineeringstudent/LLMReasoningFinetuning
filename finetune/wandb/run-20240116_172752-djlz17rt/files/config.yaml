@@ -1,0 +1,51 @@
+wandb_version: 1
+
+model:
+  desc: null
+  value: tiiuae/falcon-7b-instruct
+dataset:
+  desc: null
+  value: yc4142/bias-CoT
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.12
+    cli_version: 0.16.2
+    framework: huggingface
+    huggingface_version: 4.36.2
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1705454872.639841
+    t:
+      1:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      - 84
+      - 98
+      2:
+      - 1
+      - 5
+      - 11
+      - 49
+      - 51
+      - 53
+      - 55
+      - 71
+      - 84
+      - 98
+      3:
+      - 16
+      - 23
+      4: 3.9.12
+      5: 0.16.2
+      6: 4.36.2
+      8:
+      - 4
+      - 5
+      13: darwin-arm64

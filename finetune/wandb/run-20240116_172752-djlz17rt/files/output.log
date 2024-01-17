@@ -1,0 +1,48 @@
+yc4142/falcon-7b-instruct-lora-bias-CoT
+Loading model for model:  tiiuae/falcon-7b-instruct
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/huggingface_hub/utils/_errors.py", line 286, in hf_raise_for_status
+    response.raise_for_status()
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/requests/models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 404 Client Error: Not Found for url: https://huggingface.co/t/resolve/main/config.json
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/utils/hub.py", line 389, in cached_file
+    resolved_file = hf_hub_download(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1368, in hf_hub_download
+    raise head_call_error
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1238, in hf_hub_download
+    metadata = get_hf_file_metadata(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 1631, in get_hf_file_metadata
+    r = _request_wrapper(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 385, in _request_wrapper
+    response = _request_wrapper(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/huggingface_hub/file_download.py", line 409, in _request_wrapper
+    hf_raise_for_status(response)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/huggingface_hub/utils/_errors.py", line 323, in hf_raise_for_status
+    raise RepositoryNotFoundError(message, response) from e
+huggingface_hub.utils._errors.RepositoryNotFoundError: 404 Client Error. (Request ID: Root=1-65a72d19-714383946bb021ba17c4eaf7;fc3f17e1-77a1-43b6-9e93-ade0e5e576c3)
+Repository Not Found for url: https://huggingface.co/t/resolve/main/config.json.
+Please make sure you specified the correct `repo_id` and `repo_type`.
+If you are trying to access a private or gated repo, make sure you are authenticated.
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "/Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/finetune_HF_model.py", line 126, in <module>
+    CLI(finetune_model)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/jsonargparse/_cli.py", line 96, in CLI
+    return _run_component(components, cfg_init)
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/jsonargparse/_cli.py", line 181, in _run_component
+    return component(**cfg)
+  File "/Users/yuduc2/Desktop/JPmorgan project/LLMReasoningFinetuning/finetune/finetune_HF_model.py", line 56, in finetune_model
+    model = transformers.AutoModelForCausalLM.from_pretrained(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/models/auto/auto_factory.py", line 488, in from_pretrained
+    resolved_config_file = cached_file(
+  File "/Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/transformers/utils/hub.py", line 410, in cached_file
+    raise EnvironmentError(
+OSError: t is not a local folder and is not a valid model identifier listed on 'https://huggingface.co/models'
+If this is a private repository, make sure to pass a token having permission to this repo either by logging in with `huggingface-cli login` or by passing `token=<your_token>`
