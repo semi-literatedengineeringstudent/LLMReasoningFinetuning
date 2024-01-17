@@ -1,7 +1,7 @@
 #!/bin/bash
 
-pip install -q -U trl transformers accelerate git+https://github.com/huggingface/peft.git
-pip install -q datasets bitsandbytes einops wandb
+#pip install -q -U trl transformers accelerate git+https://github.com/huggingface/peft.git
+#pip install -q datasets bitsandbytes einops wandb
 
 huggingface-cli login
 
